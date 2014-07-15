@@ -1,0 +1,219 @@
+
+body {
+    padding:0px;
+    margin: 0px;
+    background-color: #858585;
+    color: black;
+    font-weight: 300; 
+    font-size: 13pt;
+}
+
+/* reCaptcha*/
+#recaptcha_widget{
+  padding:15px;
+  border-radius: 10px;
+  border:solid #bbb;
+  position:relative;
+  margin:0 auto;
+  max-width: 50%;
+  min-width: 450px;
+}
+
+#recaptcha_widget .col-left{
+  width:160px;
+  text-align: right;
+  float:left;
+  margin-bottom: -10px;
+}
+
+#recaptcha_widget .col-left button{
+  display:inline-block;
+  margin-bottom: 10px;
+}
+
+#recaptcha_widget .col-right{
+  position:absolute;
+  top:20px;
+  bottom:20px;
+  left:200px;
+  right:20px;
+}
+
+#recaptcha_audio_download{
+  display:none;
+}
+
+#recaptcha_image > img{
+  display:none;
+}
+
+#recaptcha_widget small{
+  font-size: 50%;
+}
+
+#container-instructions .popover {
+  max-width: 600px;
+  width: auto;
+}
+
+#spinner_wrapper{
+  position: absolute;
+  left:-10px;
+  right:-10px;
+  top:-10px;
+  bottom:-10px;
+  border-radius: 10px;
+  background-color:rgba(0,0,0,.3);
+}
+
+.modal-body dt{
+  margin-top:1em;
+}
+
+/* text styling */
+strong {
+  font-weight: 600;         
+}
+
+.warm {
+  color: steelblue;
+  text-align: justify;
+}
+
+.cool {
+  color: #ccccff;
+}
+
+
+/* these are all the same for now, but easy to modify individually */
+#container-ad,
+#container-calibrate,
+#container-fullscrn,
+#container-error,
+#container-exp,
+#container-consent,
+#container-instructions,
+#container-questionnaire {
+    position: absolute;
+    top: 18px; /* Header Height */
+    bottom: 18px; /* Footer Height */
+    left: 18px;
+    right: 18px;
+    padding: 100px;
+    padding-top: 5%;
+    background: white;
+    border-radius: 10px;
+}
+
+#container-consent, #container-exp {  /* override padding to fit long consent forms and exp display*/
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1%;
+}
+
+/* ad.html  - the ad that people view first */
+#adlogo {
+    float: right;
+    width: 140px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+/* consent.html - the consent form */
+#consent {
+  margin: 0 auto;
+  margin-top: 0;
+  width: 800px;
+  font-size: 100%;
+}
+
+.legal {
+  text-align: justify;
+  font-size: 11pt;
+  line-height: 1.1em;
+}
+
+#trial {
+  text-align: center;
+  background-color: #858585;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#guess{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-25px;
+  margin-left:-100px;
+  width: 200px;
+  font-size: 200%;
+}
+
+#query {
+  color: darkgray;
+}
+
+.question {
+  margin-bottom: 30px;
+}
+
+.tip {
+  font-size: 200%;
+}
+
+.tip.left {
+  position: fixed;
+  left:20px;
+  bottom:20px;
+}
+
+.tip.right {
+  position: fixed;
+  right:20px;
+  bottom:20px;
+}
+
+p{
+  position: relative;
+  z-index: 0;
+}
+
+/* Loading Modal */
+.noticeModalWrapper{
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-color:rgba(0,0,0,.8);
+}
+
+#loadingWrapper .noticeModal {
+  height:8em;
+  margin:3em;
+}
+
+.noticeModal.fullscreen {
+  width:400px;
+  margin: 3em auto;
+}
+
+.row{
+  text-align: center;
+  margin-bottom: .5em;
+}
+
+.row button{
+  display:inline-block;
+}
+
+/* errors */
+#error img {
+  padding-right: 10px;
+  padding-top: 15px;
+}

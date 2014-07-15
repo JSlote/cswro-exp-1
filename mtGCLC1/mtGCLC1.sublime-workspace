@@ -1,0 +1,1056 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"brow",
+				"browserHeight"
+			],
+			[
+				"scre",
+				"screenHeight"
+			],
+			[
+				"br",
+				"browserWidth"
+			],
+			[
+				"sc",
+				"screenWidth"
+			],
+			[
+				"fullsc",
+				"fullscrn"
+			],
+			[
+				"res",
+				"responseTime"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"wor",
+				"wordStims"
+			],
+			[
+				"audi",
+				"audioManager"
+			],
+			[
+				"pre",
+				"preloadSounds"
+			],
+			[
+				"inp",
+				"inputListAudioTimer"
+			],
+			[
+				"stim",
+				"stims"
+			],
+			[
+				"in",
+				"inputList"
+			],
+			[
+				"song",
+				"songStartTime"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"spin",
+				"spinner_wrapper"
+			],
+			[
+				"play",
+				"playNewCaptcha"
+			],
+			[
+				"pop",
+				"popover"
+			],
+			[
+				"key",
+				"keydown"
+			],
+			[
+				"rec",
+				"recaptcha_secret"
+			],
+			[
+				"recaptcha_",
+				"recaptcha_image"
+			],
+			[
+				"myC",
+				"mycondition"
+			],
+			[
+				"remove",
+				"removeAttr"
+			],
+			[
+				"un",
+				"unlisted_fields"
+			],
+			[
+				"des",
+				"destroy"
+			],
+			[
+				"Fie",
+				"FIELD_TYPE"
+			],
+			[
+				"F",
+				"Formbuilder"
+			],
+			[
+				"fiel",
+				"FIELD_TYPE"
+			],
+			[
+				"for",
+				"fori	Range Comprehension (inclusive)"
+			],
+			[
+				"input",
+				"inputFields"
+			],
+			[
+				"inpu",
+				"inputFields"
+			],
+			[
+				"non",
+				"nonInputFields"
+			],
+			[
+				"FO",
+				"Formbuilder"
+			],
+			[
+				"ex",
+				"extend"
+			],
+			[
+				"temp",
+				"tempOpts"
+			],
+			[
+				"Form",
+				"Formbuilder"
+			],
+			[
+				"set",
+				"setter"
+			],
+			[
+				"lastE",
+				"lastElLabel"
+			],
+			[
+				"stack",
+				"undoStack"
+			],
+			[
+				"last",
+				"lastElName"
+			],
+			[
+				"und",
+				"undoDelete"
+			],
+			[
+				"undo",
+				"undoStack"
+			],
+			[
+				"Delete",
+				"DeletedFieldModel"
+			],
+			[
+				"sub",
+				"submit_button"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"INCLU",
+				"INCLUDE_BOTTOM_SUBMIT"
+			],
+			[
+				"r",
+				"responseFields"
+			],
+			[
+				"respon",
+				"responseField"
+			],
+			[
+				"is",
+				"is_last_submit"
+			],
+			[
+				"INC",
+				"INCLUDE_BOTTOM_SUBMIT"
+			],
+			[
+				"bo",
+				"bootstrapData"
+			],
+			[
+				"Hidd",
+				"hidden_field"
+			],
+			[
+				"Label",
+				"LABEL"
+			],
+			[
+				"UN",
+				"UNLISTED_FIELDS"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"compi",
+				"compiledFolder"
+			],
+			[
+				"rivets",
+				"rivets-config"
+			],
+			[
+				"src",
+				"srcFolder"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "static/js/task.js",
+			"settings":
+			{
+				"buffer_size": 10340,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/fullscreen.html",
+			"settings":
+			{
+				"buffer_size": 999,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/exp.html",
+			"settings":
+			{
+				"buffer_size": 2725,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/instructions/ldtInstructions.html",
+			"settings":
+			{
+				"buffer_size": 1388,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/js/screenpolice.js",
+			"settings":
+			{
+				"buffer_size": 430,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/js/shycursor.js",
+			"settings":
+			{
+				"buffer_size": 890,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"wra",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"min",
+				"View: Toggle Minimap"
+			],
+			[
+				"si",
+				"View: Toggle Side Bar"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"stain",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"pcl",
+				"Package Control: List Packages"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"fold",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"ruby",
+				"SublimeREPL: Ruby"
+			],
+			[
+				"subruby",
+				"SublimeREPL: Ruby"
+			],
+			[
+				"sethtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"upperc",
+				"Convert Case: Upper Case"
+			],
+			[
+				"sshan",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"co",
+				"Coffee: Compile File"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"comp",
+				"Coffee: Compile File"
+			],
+			[
+				"com",
+				"Coffee: Compile File"
+			],
+			[
+				"compi",
+				"Coffee: Compile File"
+			],
+			[
+				"sscs",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"pcr",
+				"Package Control: Remove Package"
+			],
+			[
+				"pcrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"sss",
+				"Set Syntax: Stylus"
+			],
+			[
+				"coff",
+				"Coffee: Compile File"
+			],
+			[
+				"ssjavasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"di",
+				"FileDiffs: Menu"
+			],
+			[
+				"cof",
+				"Coffee: Check Syntax"
+			]
+		],
+		"width": 453.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/templates/exp.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/static/css/style.css",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/templates/calibrate.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/static/js/audiomanager.js",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/static/js/stimLists.js",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/templates/ldtStage.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/static/js/shycursor.js",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/templates/idStage.html",
+		"/home/joseph/Desktop/restore.py",
+		"/home/joseph/Dropbox/Current projects/MTurk/Lag Compensation/audio-present.js",
+		"/home/joseph/Dropbox/Current projects/MTurk/Lag Compensation/compensationtest.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/static/lib/underscore-min.js",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/static/js/task (Perception Lab's conflicted copy 2014-07-06).js",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/static/js/task.js",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/static/css/kbd.min.css",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/templates/instructions/ldtInstructions.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/templates/instructions/idInstructions.html",
+		"/home/joseph/Development/FlaskLearning/flaskr/flaskr.py",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/custom.py",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/config.txt",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/templates/instructions/ldtPretrial.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtGCLC1/templates/captchapause.js",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/static/js/task.js",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates/ad.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates/exp.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates/stage.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates/error.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/config.txt",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates/consent.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates/instructions/pretrial.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates/instructions/instructions.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/static/css/style.css",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/static/css/kb.min.css",
+		"/home/joseph/Development/kb.css/example.png",
+		"/home/joseph/Development/kb.css/kb.min.css",
+		"/home/joseph/Development/kb.css/kb.css",
+		"/home/joseph/Development/kb.css/README.md",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates/instructions/instruct-2.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates/instructions/instruct-1.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates/instructions/instruct-3.html",
+		"/home/joseph/Dropbox/Current projects/GCLC/mtGCLC1/config.txt",
+		"/home/joseph/Dropbox/Current projects/GCLC/mtGCLC1/custom.py",
+		"/usr/share/applications/defaults.list",
+		"/home/joseph/Dropbox/Current projects/GCLC/mtGCLC/server.log",
+		"/home/joseph/Dropbox/Current projects/GCLC/mtGCLC/config.txt~",
+		"/home/joseph/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/joseph/Development/psiturk-example/static/js/task.js",
+		"/home/joseph/Development/psiturk-example/templates/exp.html",
+		"/home/joseph/Development/Rails_learning/blog/config/routes.rb",
+		"/home/joseph/Development/Rails_learning/blog/app/views/welcome/index.html.erb",
+		"/home/joseph/Development/Rails_learning/blog/app/controllers/welcome_controller.rb",
+		"/home/joseph/Development/DevX/web-print/joe/background.js",
+		"/home/joseph/Development/DevX/web-print/joe/main.html",
+		"/home/joseph/Development/DevX/web-print/joe/manifest.json",
+		"/home/joseph/Development/DevX/web-print/joe/popup.js",
+		"/home/joseph/Development/DevX/web-print/joe/popup.html",
+		"/home/joseph/Development/DevX/web-print/joe/icon.png",
+		"/home/joseph/Development/DevX/room-draw/public/css/index.css",
+		"/home/joseph/Development/DevX/room-draw/client/templates.js",
+		"/home/joseph/Development/DevX/room-draw/lib/main.js",
+		"/home/joseph/Development/DevX/room-draw/server/main.js",
+		"/home/joseph/Development/DevX/room-draw/client/interaction.js",
+		"/home/joseph/Development/DevX/room-draw/client/index.html",
+		"/home/joseph/Development/DevX/room-draw/public/css/overlays.css",
+		"/home/joseph/Development/DevX/room-draw/settings.json",
+		"/home/joseph/Development/DevX/room-draw/client/settings.json",
+		"/home/joseph/Development/DevX/arg/room-draw/server/main.js",
+		"/home/joseph/Development/DevX/arg/room-draw/client/index.html",
+		"/home/joseph/Development/DevX/arg/room-draw/client/templates.js",
+		"/home/joseph/Development/DevX/arg/room-draw/client/interaction.js",
+		"/home/joseph/Development/DevX/arg/room-draw/lib/main.js",
+		"/home/joseph/Development/DevX/room-draw/client/overlays.css",
+		"/home/joseph/Development/DevX/room-draw/client/loading.html",
+		"/home/joseph/Development/DevX/room-draw/client/index.css",
+		"/home/joseph/Development/DevX/room-draw/private/seed_room_data.json",
+		"/home/joseph/Development/DevX/room-draw/client/brodie.css",
+		"/home/joseph/Development/DevX/room-draw/client/lib/normalDistro.js",
+		"/home/joseph/Development/DevX/room-draw/client/admin/admin.js",
+		"/home/joseph/Development/DevX/room-draw/*.js",
+		"/*/*.js",
+		"/home/joseph/Development/DevX/room-draw/client/main.js",
+		"/home/joseph/Development/TonDone/client/main.html",
+		"/home/joseph/Development/DevX/room-draw/overlays.css",
+		"/home/joseph/Development/DevX/room-draw/room-draw.html",
+		"/home/joseph/Development/DevX/room-draw/room-draw.js",
+		"/home/joseph/Development/DevX/room-draw/room-draw.css",
+		"/home/joseph/Development/DevX/room-draw/tests/style.css",
+		"/home/joseph/Development/DevX/room-draw/tests/datamodel.json",
+		"/home/joseph/Development/DevX/room-draw/tests/statichtml.html",
+		"/home/joseph/Development/TonDone/client/templates.js",
+		"/home/joseph/Development/TonDone/client/interaction.js",
+		"/home/joseph/Development/DevX/room-draw/tests/templatingsketch.html",
+		"/home/joseph/Development/DevX/room-draw/templatingsketch.html",
+		"/home/joseph/Development/DevX/room-draw/tests/normalize.css",
+		"/home/joseph/Development/DevX/room-draw/statichtml.html",
+		"/home/joseph/Development/DevX/statichtml.html",
+		"/home/joseph/Development/formbuilder-rsn/src/scripts/main.coffee",
+		"/home/joseph/Development/formbuilder-rsn/src/scripts/fields/paragraph.coffee",
+		"/home/joseph/Development/DevX/test/devx-test/joe.txt",
+		"/home/joseph/Development/DevX/test/devx-test/RAVENME.md",
+		"/home/joseph/Development/formbuilder-rsn/src/scripts/fields/text.coffee",
+		"/home/joseph/Development/formbuilder-rsn/index.html",
+		"/home/joseph/Development/formbuilder-rsn/formbuilder-config.js",
+		"/home/joseph/Development/formbuilder-rsn/README.md",
+		"/home/joseph/Downloads/xmltojsonv1.xsl",
+		"/home/joseph/Development/formbuilder-rsn/src/templates/edit/checkboxes.html",
+		"/home/joseph/Development/formbuilder-rsn/src/scripts/fields/radio.coffee",
+		"/home/joseph/Development/formbuilder-rsn/src/scripts/fields/checkboxes.coffee",
+		"/home/joseph/Development/formbuilder-rsn/src/scripts/fields/dropdown.coffee",
+		"/home/joseph/Development/formbuilder-rsn/src/templates/edit/label_description.html",
+		"/home/joseph/Development/formbuilder/index.html",
+		"/home/joseph/Development/formbuilder/Gruntfile.coffee",
+		"/home/joseph/Development/formbuilder/src/styles/formbuilder.styl",
+		"/home/joseph/Development/formbuilder/src/scripts/main.coffee",
+		"/home/joseph/Development/formbuilder/src/scripts/fields/text_comment.coffee",
+		"/home/joseph/Development/formbuilder/src/scripts/fields/section_break.coffee",
+		"/home/joseph/Development/formbuilder/src/scripts/fields/text.coffee",
+		"/home/joseph/Development/formbuilder/src/scripts/fields/hidden_field.coffee",
+		"/home/joseph/Development/formbuilder/formbuilder-config.js",
+		"/home/joseph/Development/formbuilder/src/templates/partials/add_field.html",
+		"/home/joseph/Development/formbuilder/README.md",
+		"/home/joseph/Development/formbuilder/formbuilder.sublime-project",
+		"/home/joseph/Development/formbuilder/src/scripts/main.js",
+		"/home/joseph/Development/formbuilder/src/scripts/test.coffee",
+		"/home/joseph/Development/formbuilder/src/scripts/test.js",
+		"/home/joseph/Development/formbuilder/package.json",
+		"/home/joseph/Development/formbuilder/src/templates/partials/right_side.html",
+		"/home/joseph/Development/formbuilder/vendor/js/vendor.js"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/templates",
+			"/home/joseph/Dropbox/Current projects/GCLC/GCLC_Exp1/mtID/static",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"top: ",
+			":",
+			"window",
+			"top: ",
+			":",
+			"fullscrn",
+			"dt",
+			"0px",
+			", ",
+			"container",
+			"error, #",
+			", ",
+			"border",
+			"instruct",
+			"backg",
+			"wav",
+			"callback",
+			"body",
+			"', ",
+			"cursor',",
+			"'",
+			"cursor',",
+			"'",
+			"response",
+			"pop",
+			"url",
+			"get",
+			"babble",
+			"sample",
+			"\"-",
+			"-",
+			"debug",
+			"timeLogDateNow",
+			"inputList",
+			"inputListAudioTimer",
+			"currentTime",
+			"startOffset",
+			"songOffset",
+			"source1",
+			"numtrials",
+			"next",
+			"console.log('playing",
+			"finish()",
+			"code",
+			"kb",
+			"10p",
+			"0",
+			"//",
+			"data",
+			"#playNewCaptcha",
+			"$('#playNewCaptcha')",
+			"log",
+			"debug",
+			"calib",
+			"form",
+			"Z.",
+			"Z",
+			"_add_scr",
+			"var fc = ",
+			"fc",
+			"questionnaire",
+			"response_handler",
+			"Questionnaire",
+			"finish",
+			"pre-trial",
+			"sequence",
+			"currentview",
+			"style.css",
+			"css",
+			"pretrial",
+			"instruct-ready",
+			"next",
+			"next()",
+			"next()\\",
+			"next()",
+			"currentview",
+			"instructionPages",
+			"StroopExperiment",
+			"gedit",
+			"x",
+			"gedit",
+			"Blog::Appl",
+			",",
+			"\\chi",
+			"\\chi(X)",
+			"pointer",
+			"goTo",
+			"goTi",
+			"header",
+			"logo",
+			"header",
+			"size5",
+			"input",
+			"info",
+			"relat",
+			"span",
+			"></",
+			"draw",
+			"dep",
+			"get",
+			"set",
+			"session",
+			"depend",
+			"set",
+			"header",
+			".left",
+			"header",
+			"info",
+			":not",
+			"chance",
+			"no dra",
+			"10",
+			"not",
+			"button",
+			"cancel",
+			"HEAD",
+			"2",
+			"main",
+			"display:none",
+			"info",
+			"myNumber",
+			"info",
+			".find",
+			"SmartCollection",
+			"colle",
+			"collection",
+			"Collection",
+			"HEAD"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "static/js/task.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10340,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								603,
+								603
+							],
+							[
+								1131,
+								1131
+							],
+							[
+								3815,
+								3815
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 121.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/fullscreen.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								427,
+								427
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/exp.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1958,
+								1958
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/instructions/ldtInstructions.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								931,
+								931
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 195.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "static/js/screenpolice.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								110,
+								109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "static/js/shycursor.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								371,
+								371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 102.0
+	},
+	"project": "mtID.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 214.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
