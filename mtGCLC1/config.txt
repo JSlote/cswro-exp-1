@@ -9,7 +9,8 @@ contact_email_on_error = youremail@gmail.com
 ad_group = Default psiTurk Stroop Example
 psiturk_keywords = ldt
 organization_name = Carleton College
-browser_exclude_rule = MSIE, mobile, tablet //Available options: User Agent string matching, 'mobile', 'tablet', 'touchcapable', 'pc', 'bot'
+browser_exclude_rule = MSIE, mobile, tablet 
+#Available options: User Agent string matching, 'mobile', 'tablet', 'touchcapable', 'pc', 'bot'
 
 [Database Parameters]
 database_url = postgresql://adminb6igvfw:73KBRHcu6JHF@127.4.120.130:5432/psiturk
