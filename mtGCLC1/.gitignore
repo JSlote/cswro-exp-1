@@ -1,3 +1,5 @@
 config.txt
 *.sublime-project
 *.sublime-workspace
+server.log
+participants.db
