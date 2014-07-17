@@ -1,0 +1,70 @@
+<div id="container-lagtest">
+
+    <h1>Lag measurement</h1>
+
+    <hr>
+
+    <div class="instructions well">
+        <p>In order to measure how much lag there is in your keyboard input, we would like you to keep the beat to a song using the spacebar. Keep time with the song by pressing the spacebar down, then up, then down, and so on, each beat. Use the visual guide to help you.
+        </p>
+        <p>Click "start" below to practice. Keep going until the music stops.</p>
+        <br />
+
+        <div id="test-container" class="clearfix">
+            <button type="button" class="start btn btn-primary btn-lg">Start</button>
+            <div id="visual-guide" class="clearfix"><div class="info">Get ready...</div><kbd style="width:7em; text-align:center">Space</kbd></div>
+        </div>
+
+        <div id="row" class="clearfix">
+        <button type="button" id="noSound" class="btn btn-link pull-right" data-toggle="modal" data-target="#soundModal">
+             <span class="glyphicon glyphicon-warning-sign"></span> Help! This is dumb!</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="soundModal" tabindex="-1" >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Troubleshooting Your Sound</h4>
+              </div>
+              <div class="modal-body">
+                There are a couple things you should check on:
+                <dl>
+                    <dt>Internet Connection</dt>
+                        <dd>Is the Captcha still spinning? You may have lost your internet connection.</dd>
+                    <dt>Speakers</dt>
+                        <dd>Is your system volume and speaker volume set correctly? Is anything on mute?</dd>
+                    <dt>Adobe Flash Player</dt>
+                        <dd>Do you have <a href="http://get.adobe.com/flashplayer/"target="_blank">Flash Player</a> installed?</dd>
+                </dl>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+
+            </div>
+        <div class="col-xs-8">
+                <center>
+                    <button type="button" id="next" value="next" class="btn btn-success btn-lg continue" disabled>
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                    </button>
+                </center>
+        </div>
+            <div class="col-xs-2">
+
+            </div>
+        </div>
+    </div>
+</div>

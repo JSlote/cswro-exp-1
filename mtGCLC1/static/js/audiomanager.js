@@ -66,12 +66,6 @@ function AudioManager() {
         });
     }}
 
-  //take in an array of loader objects, of the form
-  // loaderObj = {loaded: false,
-  //       eventname: "blablabla",
-  //       total: 1234,
-  //       getCount: function() {...} };
-
     return {
       total: size,
       getCount: function() { return count;},

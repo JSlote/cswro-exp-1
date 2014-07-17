@@ -1,3 +1,6 @@
+html{
+  height:100%;
+}
 
 body {
     padding:0px;
@@ -6,10 +9,11 @@ body {
     color: black;
     font-weight: 300; 
     font-size: 13pt;
+    height:100%;
 }
 
 /* reCaptcha*/
-#recaptcha_widget{
+#recaptcha_widget, #test-container{
   padding:15px;
   border-radius: 10px;
   border:solid #bbb;
@@ -87,7 +91,8 @@ strong {
 
 /* these are all the same for now, but easy to modify individually */
 #container-ad,
-#container-calibrate,
+#container-captcha,
+#container-lagtest,
 #container-fullscrn,
 #container-error,
 #container-exp,
@@ -210,6 +215,25 @@ p{
 
 .row button{
   display:inline-block;
+}
+
+#container-lagtest #test-container{
+  text-align:center;
+}
+
+#container-lagtest #visual-guide{
+  font-size:175%;
+  position: relative;
+  z-index: 0;
+  width:100%;
+}
+
+#container-lagtest #visual-guide .info{
+  margin:.5em 0;
+}
+
+#container-lagtest #visual-guide kbd{
+  font-size: 115%;
 }
 
 /* errors */
