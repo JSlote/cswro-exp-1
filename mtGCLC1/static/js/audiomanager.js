@@ -87,7 +87,9 @@ function AudioManager() {
 
     var startTime = ctxt.currentTime + waitTime;
     src.start(startTime);
-    window.setTimeout(callbackStart, waitTime*1000);
+    if (typeof callbackStart !== undefined) {
+      window.setTimeout(callbackStart, waitTime*1000);
+    }
 
     //return when the sound will start (seconds)
     return startTime;
