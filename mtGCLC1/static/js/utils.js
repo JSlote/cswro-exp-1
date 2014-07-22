@@ -18,3 +18,9 @@ function boolpercent(arr) {
 	}
 	return 100* count / arr.length;
 }
+
+//check for safari
+var isSafari = function(){
+	var ua = navigator.userAgent.toLowerCase();
+	return (ua.indexOf('safari') != -1 && ua.indexOf('chrome') == -1 )
+}
