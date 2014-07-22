@@ -49,11 +49,11 @@
 		$(function(){
 			var safe = true;
 			if (!hasAudioContext()) {
-				$("upgrade-browser").show();
+				$("#upgrade-browser").show();
 				safe = false;
 			}
 			if (!hasFlash()){
-				$("install-flash").show();
+				$("#install-flash").show();
 				safe = false;
 			}
 
@@ -162,16 +162,16 @@
 								<p>The task will take about 30 minutes and will pay $2.50.
 							    </p>
 							    <div class="alert alert-warning">
-									<strong>This task can only be completed once.</strong> 
+									<h4>This task can only be completed once.</h4> 
 									If you have already completed this task before the system will not 
 									allow you to run again. If this looks familiar please return the 
 									HIT so someone else can participate.
 							    </div>
 							    <div id="upgrade-browser" class="alert alert-danger" style="display:none">
-									<strong>You need to upgrade your browser to take this experiment.</strong> <a href="google.com/chrome">Google Chrome</a> or <a href="mozilla.org/firefox">Mozilla Firefox</a> are recommended.
+									<h4>You need to upgrade your browser to take this experiment.</h4> <a href="google.com/chrome">Google Chrome</a> or <a href="mozilla.org/firefox">Mozilla Firefox</a> are recommended.
 							    </div>
 							    <div id="install-flash" class="alert alert-danger" style="display:none">
-									<strong>You need to install Flash player to take this experiment.</strong> Please install Adobe Flash player. You can use <a href="get.adobe.com/flashplayer/">these instructions</a>.
+									<h4>You need to install Flash player to take this experiment.</h4> You can use <a href="get.adobe.com/flashplayer/">these instructions</a>.
 							    </div>
 							    <p>
 								    Otherwise, please click the "Accept HIT" button on the Amazon site 
