@@ -24,6 +24,28 @@
 		<script src="/static/lib/jquery-min.js" type="text/javascript"> </script>
 		<script src="/static/js/utils.js" type="text/javascript"> </script>
 		<script>
+		function hasFlash(){
+		    if (navigator.plugins != null && navigator.plugins.length > 0){
+		        return navigator.plugins["Shockwave Flash"] && true;
+		    }
+		    if(~navigator.userAgent.toLowerCase().indexOf("webtv")){
+		        return true;
+		    }
+		    if(~navigator.appVersion.indexOf("MSIE") && !~navigator.userAgent.indexOf("Opera")){
+		        try{
+		            return new ActiveXObject("ShockwaveFlash.ShockwaveFlash") && true;
+		        } catch(e){}
+		    }
+		    return false;
+		};
+
+		var hasAudioContext = function() {
+			try { AudioContext = AudioContext || webkitAudioContext }
+			catch (e) {
+				return false;
+			} return true;
+		};
+
 		$(function(){
 			var safe = true;
 			if (!hasAudioContext()) {
@@ -127,15 +149,15 @@
 							-->
 							{% if assignmentid == "ASSIGNMENT_ID_NOT_AVAILABLE" %}
 
-							    <h1>Call for participants</h1>
+							    <h1>Hello!</h1>
 							    <p>
 									The Perception Lab at Carleton College is looking for online participants 
 									for a brief psychology experiment. The only requirements 
-									are that you</p>
+									are that</p>
 								<ul id="requirements">
-									<li>are a native English speaker with normal hearing</li>
-									<li>have headphones or are in a quiet environment</li>
-									<li id="browsercheck">are using a desktop or laptop with a modern browser</li>
+									<li> You are a native English speaker with normal hearing</li>
+									<li> You have headphones or are in a quiet environment</li>
+									<li id="browsercheck">You are using a desktop or laptop with a modern browser</li>
 								</ul>
 								<p>The task will take about 30 minutes and will pay $2.50.
 							    </p>

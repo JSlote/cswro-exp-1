@@ -24,13 +24,13 @@ var hasAudioContext = function() {
 	catch (e) {
 		return false;
 	} return true;
-}
+};
 
 //check for safari
 var isSafari = function(){
 	var ua = navigator.userAgent.toLowerCase();
 	return (ua.indexOf('safari') != -1 && ua.indexOf('chrome') == -1 )
-}
+};
 
 function hasFlash(){
     if (navigator.plugins != null && navigator.plugins.length > 0){
@@ -45,4 +45,4 @@ function hasFlash(){
         } catch(e){}
     }
     return false;
-}
+};
