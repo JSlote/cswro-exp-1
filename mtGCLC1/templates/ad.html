@@ -21,8 +21,27 @@
 	<head>
 		<title>Psychology Experiment</title>
 		<link rel=stylesheet href="/static/css/bootstrap.min.css" type="text/css">
+		<script src="/static/lib/jquery-min.js" type="text/javascript"> </script>
+		<script src="/static/js/utils.js" type="text/javascript"> </script>
+		<script>
+		$(function(){
+			var safe = true;
+			if (!hasAudioContext()) {
+				$("upgrade-browser").show();
+				safe = false;
+			}
+			if (!hasFlash()){
+				$("install-flash").show();
+				safe = false;
+			}
+
+			if (safe) $("#browsercheck").addClass("good");
+			else $("#browsercheck").addClass("bad")
+		})
+		</script>
+
 		<style>
-			/* these tyles need to be defined locally */
+			/* these styles need to be defined locally */
 			body {
 			    padding:0px;
 			    margin: 0px;
@@ -50,6 +69,40 @@
 			    padding-top: 5%;
 			    border: 18px solid #f3f3f3;
 			    background: white;
+			}
+
+			#requirements {
+			    display:inline-block;
+			}
+
+			#requirements li{
+			    list-style:none;
+			    line-height:200%;
+			    border-top: solid 1px #ddd;
+			}
+
+			#requirements li:first-child{
+			    border-top: none;
+			}
+
+			#requirements li:before{
+			    content:'\e085';
+			    font-family:'Glyphicons Halflings';
+		        font-style:normal;
+			    position: absolute;
+			    left:1.5em;
+			        -webkit-font-smoothing:antialiased;
+			        -moz-osx-font-smoothing:grayscale;
+			}
+
+			#requirements li.good:before{
+			    content:'\e084';
+			    color: #568203;
+			}
+
+			#requirements li.bad:before{
+			    content:'\e083';
+			    color: #E62020;
 			}
 		</style>
 	</head>
@@ -82,15 +135,21 @@
 								<ul id="requirements">
 									<li>are a native English speaker with normal hearing</li>
 									<li>have headphones or are in a quiet environment</li>
-									<li>are using a desktop or laptop with a modern browser</li>
+									<li id="browsercheck">are using a desktop or laptop with a modern browser</li>
 								</ul>
 								<p>The task will take about 30 minutes and will pay $2.50.
 							    </p>
-							    <div class="alert alert-danger">
+							    <div class="alert alert-warning">
 									<strong>This task can only be completed once.</strong> 
 									If you have already completed this task before the system will not 
 									allow you to run again. If this looks familiar please return the 
 									HIT so someone else can participate.
+							    </div>
+							    <div id="upgrade-browser" class="alert alert-danger" style="display:none">
+									<strong>You need to upgrade your browser to take this experiment.</strong> <a href="google.com/chrome">Google Chrome</a> or <a href="mozilla.org/firefox">Mozilla Firefox</a> are recommended.
+							    </div>
+							    <div id="install-flash" class="alert alert-danger" style="display:none">
+									<strong>You need to install Flash player to take this experiment.</strong> Please install Adobe Flash player. You can use <a href="get.adobe.com/flashplayer/">these instructions</a>.
 							    </div>
 							    <p>
 								    Otherwise, please click the "Accept HIT" button on the Amazon site 
