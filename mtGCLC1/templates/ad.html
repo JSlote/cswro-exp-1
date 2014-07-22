@@ -85,8 +85,9 @@
 									<li>are using a desktop or laptop</li>
 									<li>have headphones or are in a quiet environment</li>
 									<!-- not deaf? -->
+									<!-- browser sniff here? -->
 								</ul>
-								<p>The task will that XXXXX minutes and will pay XXXXX.
+								<p>The task will take about 30 minutes and will pay $2.50.
 							    </p>
 							    <div class="alert alert-danger">
 									<strong>This task can only be completed once.</strong> 
@@ -123,7 +124,6 @@
 									function openwindow() {
 							    		popup = window.open('{{ server_location }}/consent?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}','Popup','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width='+1024+',height='+768+'');
 							  		}
-							  		//here is where we might do fullscreen instead. Fullscreen iFrame.
 							    </script>
 							    <div class="alert alert-warning">
 							    	<b>Warning</b>: Please disable pop-up blockers before continuing.
