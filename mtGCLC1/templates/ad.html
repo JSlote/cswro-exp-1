@@ -45,8 +45,7 @@
 		// 		return false;
 		// 	} return true;
 		// };
-
-		$(function(){
+		$(window).load(function(){
 			var safe = true;
 			if (!hasAudioContext()) {
 				console.log("no audio!");
@@ -74,7 +73,8 @@
 				$(this).addClass('btn-default');
 				$(this).prop('disabled', true);
 			});
-		})
+		});
+
 		</script>
 
 		<style>
