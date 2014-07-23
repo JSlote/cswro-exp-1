@@ -202,14 +202,14 @@
 									openwindow() function below if you want you experiment
 									to work.
 								-->
-							    <h1>Thank you for accepting this HIT! This is in ad.html</h1>
+							    <h1>Thank you for accepting this HIT!</h1>
 							    <p>
 							    	By clicking the following URL link, you will be taken to the experiment,
 							        including complete instructions and an informed consent agreement.
 							    </p>
 							    <script>
 									function openwindow() {
-							    		popup = window.open('{{ server_location }}/consent?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}','Popup','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width='+1024+',height='+768+'');
+							    		popup = window.open('{{ server_location }}/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}','Popup','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width='+1024+',height='+768+'');
 							  		}
 							    </script>
 							    <div class="alert alert-warning">
