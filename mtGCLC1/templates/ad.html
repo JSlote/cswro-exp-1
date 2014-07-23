@@ -79,6 +79,10 @@
 			    font-size: 13pt;
 			}
 
+			div.legal.well{
+				height: 10em;
+			}
+
 			/* ad.html  - the ad that people view first */
 			#adlogo {
 			    float: right;
@@ -203,43 +207,41 @@
 									to work.
 								-->
 							    <h1>Thanks! We need your consent to proceed</h1>
-					            <div id="consent">
-					                <h1>We need your consent to proceed</h1>
-					                <hr>
-					                <div class="legal well">
-					                    <p>
-					                    This research is being conducted by Dr. Julia Strand at Carleton College in Northfield, Minnesota. We are investigating how people perceive spoken language. During the study, you will be asked to find a quiet place and listen to spoken sentences and sounds. Then, you will be asked to identify some of the words or sounds that you hear by typing them.
-					                    </p>
-					                    <p>
-					                    The study will take about 30 minutes of your time and you will be paid $2.50.
-					                    </p>
-					                    <p>
-					                    There are no direct risks to you for participating in this study and no direct benefits other than compensation for your time and adding to our scientific knowledge.
-					                    </p>
-					                    <p>Your data will be de-identified as soon as data collection is complete so your results will not be able to be linked with you.</p>
+				                <hr>
+				                <div class="legal well">
+				                    <p>
+				                    This research is being conducted by Dr. Julia Strand at Carleton College in Northfield, Minnesota. We are investigating how people perceive spoken language. During the study, you will be asked to find a quiet place and listen to spoken sentences and sounds. Then, you will be asked to identify some of the words or sounds that you hear by typing them.
+				                    </p>
+				                    <p>
+				                    The study will take about 30 minutes of your time and you will be paid $2.50.
+				                    </p>
+				                    <p>
+				                    There are no direct risks to you for participating in this study and no direct benefits other than compensation for your time and adding to our scientific knowledge.
+				                    </p>
+				                    <p>Your data will be de-identified as soon as data collection is complete so your results will not be able to be linked with you.</p>
 
-					                    <p>Your participation is voluntary: if you change your mind about participating, you may stop at any time without penalty.  Please feel free to contact me if you have any questions, concerns or comments about the project.</p>
+				                    <p>Your participation is voluntary: if you change your mind about participating, you may stop at any time without penalty.  Please feel free to contact me if you have any questions, concerns or comments about the project.</p>
 
-					                    <p>Thank you!</p>
+				                    <p>Thank you!</p>
 
-					                    <address>
-					                        Julia Strand, PhD <br>
-					                        Visiting Assitant Professor of Psychology <br>
-					                        Carleton College <br>
-					                        Northfield, Minnesota 55057
-					                        507-222-5637 (office)
-					                    </address>
+				                    <address>
+				                        Julia Strand, PhD <br>
+				                        Visiting Assitant Professor of Psychology <br>
+				                        Carleton College <br>
+				                        Northfield, Minnesota 55057
+				                        507-222-5637 (office)
+				                    </address>
 
-					                    <p>If you have any questions or concerns regarding this study and would like to talk 
-					                    to someone other than the researcher(s), contact the Institutional Review Board for 
-					                    Research with Human Subjects at Carleton College, c/o Office of the Associate Dean 
-					                    of the College, Carleton College, One North college Street, Northfield MN, 55057; 
-					                    telephone (507) 222-4301.</p>
+				                    <p>If you have any questions or concerns regarding this study and would like to talk 
+				                    to someone other than the researcher(s), contact the Institutional Review Board for 
+				                    Research with Human Subjects at Carleton College, c/o Office of the Associate Dean 
+				                    of the College, Carleton College, One North college Street, Northfield MN, 55057; 
+				                    telephone (507) 222-4301.</p>
 
-					                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
-					                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
-					                    </button>
-					                </div>
+				                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
+				                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
+				                    </button>
+				                </div>
 							    <script>
 									function openwindow() {
 							    		popup = window.open('{{ server_location }}/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}','Popup','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width='+1024+',height='+768+'');
@@ -262,9 +264,9 @@
 						    	<button type="button" id="begin" class="btn btn-primary btn-lg" onClick="openwindow();">
 								  <span class="glyphicon glyphicon-ok"></span> I agree. Begin the experiment.
 								</button>
-								
+
 								<div class="alert alert-warning">
-							    	<b>Note:</b> If the above button is not working, please disable any pop-up blockers you may have enabled.
+							    	<b>Note:</b> Please disable any pop-up blockers you may have enabled.
 							    </div>
 
 							{% endif %}
