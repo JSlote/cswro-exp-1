@@ -40,7 +40,7 @@
 		};
 
 		var hasAudioContext = function() {
-			try { AudioContext = AudioContext || webkitAudioContext }
+			try { window.AudioContext = window.AudioContext || window.webkitAudioContext }
 			catch (e) {
 				return false;
 			} return true;
@@ -121,7 +121,7 @@
 			    font-family:'Glyphicons Halflings';
 		        font-style:normal;
 			    position: absolute;
-			    left:1.5em;
+			    left:1.9em;
 			    -webkit-font-smoothing:antialiased;
 			    -moz-osx-font-smoothing:grayscale;
 			}
