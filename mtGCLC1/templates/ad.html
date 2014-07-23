@@ -65,6 +65,13 @@
 				$("#browsercheck").addClass("bad");
 				$("#begin").prop('disabled', true);
 			}
+
+			$("button#cancel").click(function(){
+				$(this).text('Please Click "Return HIT" below to exit the study');
+				$(this).removeClass('btn-danger');
+				$(this).addClass('btn-default');
+				$(this).disable();
+			})
 		})
 		</script>
 
@@ -141,8 +148,12 @@
 			    color: #E62020;
 			}
 
+			button#begin{
+				float:right;
+			}
+
 			div.alert-warning{
-				margin-top:1 em;
+				margin-top:1em;
 			}
 		</style>
 	</head>
@@ -262,13 +273,15 @@
 
 							    <p>By clicking “I agree” below, you certify that you are 18 years or older, a native English speaker, understand the above information, and consent to participate in this study.</p>
 							    
-							    <button type="button" class="btn btn-danger btn-lg" >
+							    <div class="row clearfix">
+							    <button type="button" id="cancel" class="btn btn-danger btn-lg" >
 			                    	<span class="glyphicon glyphicon-ban-circle"></span> No thanks, I do not want to do this HIT
 			                    </button>
 						    	
 						    	<button type="button" id="begin" class="btn btn-primary btn-lg" onClick="openwindow();">
 								  <span class="glyphicon glyphicon-ok"></span> I agree. Begin the experiment.
 								</button>
+								</div>
 
 								<div class="alert alert-warning">
 							    	<b>Note:</b> Please disable any pop-up blockers you may have enabled.
