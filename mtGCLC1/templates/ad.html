@@ -57,8 +57,14 @@
 				safe = false;
 			}
 
-			if (safe) $("#browsercheck").addClass("good");
-			else $("#browsercheck").addClass("bad")
+			if (safe) {
+				$("#browsercheck").addClass("good");
+				$("#begin").prop('disabled', false);
+			}
+			else {
+				$("#browsercheck").addClass("bad");
+				$("#begin").prop('disabled', true);
+			}
 		})
 		</script>
 
@@ -98,7 +104,6 @@
 			}
 
 			#requirements li{
-			    list-style:none;
 			    line-height:200%;
 			    border-top: solid 1px #ddd;
 			}
@@ -107,14 +112,18 @@
 			    border-top: none;
 			}
 
-			#requirements li:before{
+			#requirements li.good, #requirements li.bad{
+			    list-style: none;
+			}
+
+			#requirements li.good:before, #requirements li.bad:before{
 			    content:'\e085';
 			    font-family:'Glyphicons Halflings';
 		        font-style:normal;
 			    position: absolute;
 			    left:1.5em;
-			        -webkit-font-smoothing:antialiased;
-			        -moz-osx-font-smoothing:grayscale;
+			    -webkit-font-smoothing:antialiased;
+			    -moz-osx-font-smoothing:grayscale;
 			}
 
 			#requirements li.good:before{
@@ -206,8 +215,14 @@
 							    <div class="alert alert-warning">
 							    	<b>Warning</b>: Please disable pop-up blockers before continuing.
 							    </div>
+							    <div id="upgrade-browser" class="alert alert-danger" style="display:none">
+									<h4>You need to upgrade your browser to take this experiment.</h4> <a href="google.com/chrome">Google Chrome</a> or <a href="mozilla.org/firefox">Mozilla Firefox</a> are recommended.
+							    </div>
+							    <div id="install-flash" class="alert alert-danger" style="display:none">
+									<h4>You need to install Flash player to take this experiment.</h4> You can use <a href="get.adobe.com/flashplayer/">these instructions</a>.
+							    </div>
 							    
-						    	<button type="button" class="btn btn-primary btn-lg" onClick="openwindow();">
+						    	<button type="button" id="begin" class="btn btn-primary btn-lg" onClick="openwindow();">
 								  Begin Experiment
 								</button>
 
