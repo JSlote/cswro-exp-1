@@ -67,11 +67,11 @@
 			}
 
 			$("button#cancel").click(function(){
-				$(this).text('Please Click "Return HIT" below to exit the study');
+				$(this).text('Please click "Return HIT" below to exit.');
 				$(this).removeClass('btn-danger');
 				$(this).addClass('btn-default');
-				$(this).disable();
-			})
+				$(this).prop('disabled', true);
+			});
 		})
 		</script>
 
@@ -150,6 +150,10 @@
 
 			button#begin{
 				float:right;
+			}
+
+			button#cancel{
+				transition: all 0.2s ease;
 			}
 
 			div.alert-warning{
