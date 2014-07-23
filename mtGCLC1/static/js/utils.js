@@ -20,10 +20,12 @@ function boolpercent(arr) {
 }
 
 var hasAudioContext = function() {
-	try { AudioContext = AudioContext || webkitAudioContext }
+	try { window.AudioContext = window.AudioContext || window.webkitAudioContext }
 	catch (e) {
 		return false;
-	} return true;
+	}
+	if (typeof window.AudioContext === 'undefined') return false;
+	else return true;
 };
 
 //check for safari
