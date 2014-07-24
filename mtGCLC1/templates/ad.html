@@ -104,13 +104,7 @@
 			}
 
 			#container-ad {
-			    position: absolute;
-			    top: 0px; /* Header Height */
-			    bottom: 0px; /* Footer Height */
-			    left: 0px;
-			    right: 0px;
-			    padding: 100px;
-			    padding-top: 5%;
+			    padding: 5% 100px;
 			    border: 18px solid #f3f3f3;
 			    background: white;
 			}
@@ -205,7 +199,7 @@
 									HIT so someone else can participate.
 							    </div>
 							    <div id="upgrade-browser" class="alert alert-danger" style="display:none">
-									<h4>You need to upgrade your browser to take this experiment.The newest versions of </h4> <a href="google.com/chrome">Google Chrome</a> or <a href="mozilla.org/firefox">Mozilla Firefox</a> are recommended.
+									<h4>You need to upgrade your browser to take this experiment.</h4> The newest versions of <a href="google.com/chrome">Google Chrome</a> or <a href="mozilla.org/firefox">Mozilla Firefox</a> are recommended.
 							    </div>
 							    <div id="install-flash" class="alert alert-danger" style="display:none">
 									<h4>You need to install Flash player to take this experiment.</h4> You can use <a href="get.adobe.com/flashplayer/">these instructions</a>.
@@ -230,7 +224,7 @@
 									openwindow() function below if you want you experiment
 									to work.
 								-->
-							    <h1>Thanks! We need your consent to proceed</h1>
+							    <h1>Thanks! We need your consent to proceed.</h1>
 				                <hr>
 				                <div class="legal well">
 				                    <p>
@@ -262,10 +256,12 @@
 				                    of the College, Carleton College, One North college Street, Northfield MN, 55057; 
 				                    telephone (507) 222-4301.</p>
 
-				                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
-				                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
-				                    </button>
 				                </div>
+				                <div class="row">
+			                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
+				                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
+			                    </button>
+			                    </div>
 							    <script>
 									function openwindow() {
 							    		popup = window.open('{{ server_location }}/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}','Popup','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width='+1024+',height='+768+'');
@@ -273,7 +269,7 @@
 							    </script>
 
 							    <div id="upgrade-browser" class="alert alert-danger" style="display:none">
-									<h4>You need to upgrade your browser to take this experiment.The newest versions of </h4> <a href="google.com/chrome">Google Chrome</a> or <a href="mozilla.org/firefox">Mozilla Firefox</a> are recommended.
+									<h4>You need to upgrade your browser to take this experiment.</h4> The newest versions of <a href="google.com/chrome">Google Chrome</a> or <a href="mozilla.org/firefox">Mozilla Firefox</a> are recommended.
 							    </div>
 							    <div id="install-flash" class="alert alert-danger" style="display:none">
 									<h4>You need to install Flash player to take this experiment.</h4> You can use <a href="get.adobe.com/flashplayer/">these instructions</a>.
