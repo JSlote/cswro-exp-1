@@ -154,6 +154,14 @@
 				transition: all 0.2s ease;
 			}
 
+			button.print{
+				float: right;
+				position: relative;
+				top: -4em;
+				left: -4em;
+				margin: -1em;
+			}
+
 			div.alert-warning{
 				margin-top:1em;
 			}
@@ -256,12 +264,10 @@
 				                    of the College, Carleton College, One North college Street, Northfield MN, 55057; 
 				                    telephone (507) 222-4301.</p>
 
+				                    <button type="button" class="print btn btn-default btn-sm" onClick="window.print();">
+					                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
+				                    </button>
 				                </div>
-				                <div class="row">
-			                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
-				                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
-			                    </button>
-			                    </div>
 							    <script>
 									function openwindow() {
 							    		popup = window.open('{{ server_location }}/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}','Popup','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width='+1024+',height='+768+'');
