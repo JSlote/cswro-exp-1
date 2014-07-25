@@ -53,7 +53,7 @@
 		<thead><tr><th>Worker ID</th><th>Stimulus</th><th>Response</th></tr></thead>
 		<tbody>
 		{% for worker in workers %}
-			{% if worker.questions.realCondition == 0 %}
+			{% if worker.questions.realCondition == '0' %}
 				{% for trial in worker.trials %}
 					{% if trial.trialdata.phase == 'TEST' %}
 					<tr>
@@ -74,7 +74,7 @@
 			<thead><tr><th>Worker ID</th><th>Stimulus</th><th>Response</th><th>Reaction Time</th></tr></thead>
 			<tbody>
 			{% for worker in workers %}
-				{% if worker.questions.realCondition == 1 %}
+				{% if worker.questions.realCondition == '1' %}
 					{% for trial in worker.trials %}
 						{% if trial.trialdata.phase == 'TEST' %}
 						<tr>
