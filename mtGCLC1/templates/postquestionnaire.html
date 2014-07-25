@@ -9,53 +9,42 @@
 
         <form id="postquiz" action="debrief" method="post">
 
-
             <!-- beginning of a question -->
             <div class="row question">
                 <div class="col-md-8">
-                    On a scale of 1-10 (where 10 is the most engaged), please rate how <b>ENGAGING</b> you found the learning task:
+                    Do you speak a language other than English?
                 </div>
                 <div class="col-md-4">
-                    <select id="engagement" name="engagement">
-                        <option value="10">10 - Very engaging</option>
-                        <option value="9">9</option>
-                        <option value="8">8</option>
-                        <option value="7">7</option>
-                        <option value="6">6</option>
-                        <option value="5" SELECTED>5 - Moderately</option>
-                        <option value="4">4</option>
-                        <option value="3">3</option>
-                        <option value="2">2</option>
-                        <option value="1">1</option>
-                        <option value="0">0 - Not engaged</option>
-                    </select>
+                    <input type="radio" value="yes" id="multilingualYes" name="multilingual" /><label for="multilingualYes">Yes</label>
+                    <input type="radio" value="no" id="multilingualNo" name="multilingual" /><label for="multilingualNo">No</label>
                 </div>
             </div>
             <!-- end of a question -->
 
+            <!-- beginning of a question -->
+            <div class="row question">
+                <div class="col-md-8">
+                    What was the first language you learned how to speak?
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" value="English" id="firstlangEng" name="firstlang" /><label for="firstlangEng">English</label>
+                    <input type="radio" value="notEnglish" id="firstlangNotEng" name="firstlang" /><label for="firstlangNotEng">Not English</label>
+                </div>
+            </div>
+            <!-- end of a question -->
 
             <!-- beginning of a question -->
             <div class="row question">
                 <div class="col-md-8">
-                    On a scale of 1-10 (where 10 is the most difficult), please rate how <b>DIFFICULT</b> you found the learning task:
+                    Currently, what language do you use most?
                 </div>
                 <div class="col-md-4">
-                    <select id="difficulty" name="difficulty">
-                        <option value="10">10 - Very difficult</option>
-                        <option value="9">9</option>
-                        <option value="8">8</option>
-                        <option value="7">7</option>
-                        <option value="6">6</option>
-                        <option value="5" SELECTED>5 - Moderately difficult</option>
-                        <option value="4">4</option>
-                        <option value="3">3</option>
-                        <option value="2">2</option>
-                        <option value="1">1</option>
-                        <option value="0">0 - Not difficult at all</option>
-                    </select>
+                    <input type="radio" value="English" id="useEng" name="usemost" /><label for="useEng">English</label>
+                    <input type="radio" value="notEnglish" id="useNotEng" name="usemost" /><label for="useNotEng">Not English</label>
                 </div>
             </div>
             <!-- end of a question -->
+
         </form>
     </div>
 
@@ -68,7 +57,7 @@
             <div class="col-xs-7">
             </div>
             <div class="col-xs-3">
-                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue" disabled >
                     Finish <span class="glyphicon glyphicon-arrow-right"></span>
                 </button>
             </div>

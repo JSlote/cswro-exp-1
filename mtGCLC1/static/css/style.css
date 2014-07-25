@@ -110,6 +110,32 @@ strong {
     border-radius: 10px;
 }
 
+#container-questionnaire #postquiz .row{
+  border-top:solid #ddd 1px;
+  padding-top:.5em;
+}
+
+#container-questionnaire #postquiz .row:first-child{
+  border-top:none;
+}
+
+#container-questionnaire #postquiz .col-md-8{
+  text-align: right;
+}
+
+#container-questionnaire #postquiz .col-md-4{
+  text-align: left;  
+}
+
+#container-questionnaire #postquiz input[type=radio]{
+  margin: 4px !important;
+  border:solid red 3px;
+}
+
+#container-questionnaire #postquiz label{
+  min-width: 4em;
+}
+
 #container-consent, #container-exp {  /* override padding to fit long consent forms and exp display*/
   padding: 10px;
   padding-left: 20px;
