@@ -36,7 +36,7 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<h1>Experiment Data as of {{ date }}</h1>
+	<h1>Experiment Data as of {{ date }} (UTC)</h1>
 	<p>Select the table with your mouse and copy and paste it into an Excel document.</p>
 	<!-- Nav tabs -->
 	<ul class="nav nav-tabs" role="tablist">
@@ -49,11 +49,11 @@
 	<div class="tab-content">
 	  <div class="tab-pane active" id="ID">
   		<table id="ID">
-		<caption>ID Trials</caption>
+		<caption>ID Trials: {{ idnum }} participants</caption>
 		<thead><tr><th>Worker ID</th><th>Stimulus</th><th>Response</th></tr></thead>
 		<tbody>
 		{% for worker in workers %}
-			{% if worker.questions.realCondition == '0' %}
+			{% if worker.condition == 0 %}
 				{% for trial in worker.trials %}
 					{% if trial.trialdata.phase == 'TEST' %}
 					<tr>
@@ -70,11 +70,11 @@
 	  </div>
 	  <div class="tab-pane" id="LDT">
 			<table id="LDT">
-			<caption>LDT Trials</caption>
+			<caption>LDT Trials: {{ ldtnum }} participants</caption>
 			<thead><tr><th>Worker ID</th><th>Stimulus</th><th>Response</th><th>Reaction Time</th></tr></thead>
 			<tbody>
 			{% for worker in workers %}
-				{% if worker.questions.realCondition == '1' %}
+				{% if worker.condition == 1 %}
 					{% for trial in worker.trials %}
 						{% if trial.trialdata.phase == 'TEST' %}
 						<tr>
