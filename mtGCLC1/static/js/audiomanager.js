@@ -45,7 +45,7 @@ function AudioManager() {
     request.send();
   };
 
-  this.preloadSounds = function (urlMap, callback, setName) {
+  this.preloadSounds = function (urlMap, setName, callback) {
     //returns true if all sounds loaded successfully, false if not
     console.log("setName is "+ setName);
     var size = Object.keys(urlMap).length;
@@ -55,39 +55,43 @@ function AudioManager() {
     var soundName;
     var eventName = "soundLoaded" + (typeof setName === 'undefined' ? "" : "." + setName);
 
+    var handleLoad = function(success) {
+      count++;
+      if (!success) allsuccess = false;
+      window.dispatchEvent(new CustomEvent(eventName, {detail: count}));
+      if (count == size && (typeof callback !== "undefined")) callback(allsuccess);
+    };
+
     //iterate through sound objs
     for (soundName in urlMap) { if (urlMap.hasOwnProperty(soundName)) {
-      manager.preloadSound(soundName, urlMap[soundName],
-        function (success) {
-          count++;
-          if (!success) allsuccess = false;
-          window.dispatchEvent(new CustomEvent(eventName, {detail: count}));
-          if (count == size) callback(allsuccess);
-        });
+      manager.preloadSound(soundName, urlMap[soundName], handleLoad);
     }}
 
     return {
       total: size,
       getCount: function() { return count;},
       eventName: eventName
-    }
+    };
   };
 
   this.play = function (soundName, waitTime, callbackEnd, callbackStart) {
     //plays sound now or at specific time
     var ctxt = manager.context;
-    if (waitTime === undefined) waitTime = 0;
+    if (typeof waitTime === 'undefined') waitTime = 0;
 
     var src = ctxt.createBufferSource();
     src.buffer = manager.buffers[soundName];
-    //hacky, time the callbackEnd b/c audio API doesn't have anything better right now
-    // setTimeout(callbackEnd, src.buffer.duration * 1000);
+
     src.onended = callbackEnd;
     src.connect(ctxt.destination);
 
+    console.log("ctxt.currentTime " + ctxt.currentTime);
+    console.log("waitTime " + waitTime);
+
     var startTime = ctxt.currentTime + waitTime;
-    src.start(startTime);
-    if (typeof callbackStart !== undefined) {
+    console.log(startTime);
+    src.start(0);
+    if (typeof callbackStart !== 'undefined') {
       window.setTimeout(callbackStart, waitTime*1000);
     }
 
