@@ -34,80 +34,29 @@
     </style>
 	<script src="/static/lib/jquery-min.js" type="text/javascript"> </script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<h1>Experiment Data as of {{ date }} (UTC)</h1>
-	<p>Select the table with your mouse and copy and paste it into an Excel document.</p>
-	<!-- Nav tabs -->
-	<ul class="nav nav-tabs" role="tablist">
-	  <li class="active"><a href="#ID" role="tab" data-toggle="tab">ID Task</a></li>
-	  <li><a href="#LDT" role="tab" data-toggle="tab">LDT Task</a></li>
-	  <li><a href="#Survey" role="tab" data-toggle="tab">Survey Responses</a></li>
-	</ul>
-
-	<!-- Tab panes -->
-	<div class="tab-content">
-	  <div class="tab-pane active" id="ID">
-  		<table id="ID">
-		<caption>ID Trials: {{ idnum }} participants</caption>
-		<thead><tr><th>Worker ID</th><th>Stimulus</th><th>Response</th></tr></thead>
-		<tbody>
+	<script>
+	var idtrials = ["data:text/csv;charset=utf-8","Worker ID,Stimulus,Response",
+		{% for worker in workers %}{% if worker.condition == 0 %}{% for trial in worker.trials %}{% if trial.trialdata.phase == 'TEST' %}
+			"{{ worker.id }},{{ trial.trialdata.word|default("error") }},{{ trial.trialdata.response|default("error") }}",
+		{% endif %}{% endfor %}{% endif %}{% endfor %}].join("\n");
+	var ldttrials = ["data:text/csv;charset=utf-8","Worker ID,Stimulus,Response,Reaction Time",
+		{% for worker in workers %}{% if worker.condition == 1 %}{% for trial in worker.trials %}{% if trial.trialdata.phase == 'TEST' %}
+			"{{ worker.id }},{{ trial.trialdata.word|default("error") }},{{ trial.trialdata.response|default("error") }}",
+		{% endif %}{% endfor %}{% endif %}{% endfor %}].join("\n");
+	var questions = ["data:text/csv;charset=utf-8","Worker ID,Multilingual,First Language,Main Language",
 		{% for worker in workers %}
-			{% if worker.condition == 0 %}
-				{% for trial in worker.trials %}
-					{% if trial.trialdata.phase == 'TEST' %}
-					<tr>
-						<td>{{ worker.id }}</td>
-						<td>{{ trial.trialdata.word|default("error") }}</td>
-						<td>{{ trial.trialdata.response|default("error") }}</td>
-					</tr>
-					{% endif %}
-				{% endfor %}
-			{% endif %}
-		{% endfor %}
-		</tbody>
-		</table>
-	  </div>
-	  <div class="tab-pane" id="LDT">
-			<table id="LDT">
-			<caption>LDT Trials: {{ ldtnum }} participants</caption>
-			<thead><tr><th>Worker ID</th><th>Stimulus</th><th>Response</th><th>Reaction Time</th></tr></thead>
-			<tbody>
-			{% for worker in workers %}
-				{% if worker.condition == 1 %}
-					{% for trial in worker.trials %}
-						{% if trial.trialdata.phase == 'TEST' %}
-						<tr>
-							<td>{{ worker.id }}</td>
-							<td>{{ trial.trialdata.word|default("error") }}</td>
-							<td>{{ trial.trialdata.response|default("error") }}</td>
-							<td>{{ trial.trialdata.reactionTime|default("error") }}</td>
-						</tr>
-						{% endif %}
-					{% endfor %}
-				{% endif %}
-			{% endfor %}
-			</tbody>
-			</table>
-	  </div>
+				"{{ worker.id }},{{ worker.questions.multilingual }},{{ worker.questions.firstlang }},{{ worker.questions.usemost }}",
+		{% endfor %}].join("\n");
 
-	  <div class="tab-pane" id="Survey">
-		<table id="questionnaire">
-		<caption>Questionnaire Responses</caption>
-		<thead><tr><th>Worker ID</th><th>Multilingual</th><th>First Language</th><th>Main Language</th></tr></thead>
-		<tbody>
-			{% for worker in workers %}
-			<tr>
-				<td>{{ worker.id }}</td>
-				<td>{{ worker.questions.multilingual|default("error") }}</td>
-				<td>{{ worker.questions.firstlang|default("error") }}</td>
-				<td>{{ worker.questions.usemost|default("error") }}</td>
-			</tr>
-			{% endfor %}
-		</tbody>
-		</table>
-	  </div>
-	</div>
+
+	</script>
+</head>
+<body style="text-align:center;">
+	<h1>Experiment Data as of {{ date }} (UTC)</h1>
+	Number of complete IDs: {{ idnum }}; Number of complete LDTs: {{ ldtnum }} <br />
+	<button id="idbtn" onclick="window.open(encodeURI(idtrials));">Download ID Data</button>
+	<button id="ldtbtn" onclick="window.open(encodeURI(ldttrials));">Download LDT Data</button>
+	<button id="questbtn" onclick="window.open(encodeURI(questions));">Download Questionnaire Data</button>
 
 </body>
 </html>
