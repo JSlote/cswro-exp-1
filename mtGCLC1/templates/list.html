@@ -35,15 +35,15 @@
 	<script src="/static/lib/jquery-min.js" type="text/javascript"> </script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script>
-	var idtrials = ["data:text/csv;charset=utf-8","Worker ID,Stimulus,Response",
+	var idtrials = ["data:text/csv;charset=utf-8","ID TRIALS","Worker ID,Stimulus,Response",
 		{% for worker in workers %}{% if worker.condition == 0 %}{% for trial in worker.trials %}{% if trial.trialdata.phase == 'TEST' %}
 			"{{ worker.id }},{{ trial.trialdata.word|default("error") }},{{ trial.trialdata.response|default("error") }}",
 		{% endif %}{% endfor %}{% endif %}{% endfor %}].join("\n");
-	var ldttrials = ["data:text/csv;charset=utf-8","Worker ID,Stimulus,Response,Reaction Time",
+	var ldttrials = ["data:text/csv;charset=utf-8","LDT TRIALS","Worker ID,Stimulus,Response,Reaction Time",
 		{% for worker in workers %}{% if worker.condition == 1 %}{% for trial in worker.trials %}{% if trial.trialdata.phase == 'TEST' %}
 			"{{ worker.id }},{{ trial.trialdata.word|default("error") }},{{ trial.trialdata.response|default("error") }}",
 		{% endif %}{% endfor %}{% endif %}{% endfor %}].join("\n");
-	var questions = ["data:text/csv;charset=utf-8","Worker ID,Multilingual,First Language,Main Language",
+	var questions = ["data:text/csv;charset=utf-8","LANGUAGE INFO","Worker ID,Multilingual,First Language,Main Language",
 		{% for worker in workers %}
 				"{{ worker.id }},{{ worker.questions.multilingual }},{{ worker.questions.firstlang }},{{ worker.questions.usemost }}",
 		{% endfor %}].join("\n");
