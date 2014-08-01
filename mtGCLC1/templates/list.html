@@ -34,29 +34,13 @@
     </style>
 	<script src="/static/lib/jquery-min.js" type="text/javascript"> </script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script>
-	var idtrials = ["data:text/csv;charset=utf-8","ID TRIALS","Worker ID,Stimulus,Response",
-		{% for worker in workers %}{% if worker.condition == 0 %}{% for trial in worker.trials %}{% if trial.trialdata.phase == 'TEST' %}
-			"{{ worker.id }},{{ trial.trialdata.word|default("error") }},{{ trial.trialdata.response|default("error") }}",
-		{% endif %}{% endfor %}{% endif %}{% endfor %}].join("\n");
-	var ldttrials = ["data:text/csv;charset=utf-8","LDT TRIALS","Worker ID,Stimulus,Response,Reaction Time",
-		{% for worker in workers %}{% if worker.condition == 1 %}{% for trial in worker.trials %}{% if trial.trialdata.phase == 'TEST' %}
-			"{{ worker.id }},{{ trial.trialdata.word|default("error") }},{{ trial.trialdata.response|default("error") }}",
-		{% endif %}{% endfor %}{% endif %}{% endfor %}].join("\n");
-	var questions = ["data:text/csv;charset=utf-8","LANGUAGE INFO","Worker ID,Multilingual,First Language,Main Language",
-		{% for worker in workers %}
-				"{{ worker.id }},{{ worker.questions.multilingual }},{{ worker.questions.firstlang }},{{ worker.questions.usemost }}",
-		{% endfor %}].join("\n");
-
-
-	</script>
 </head>
 <body style="text-align:center;">
 	<h1>Experiment Data as of {{ date }} (UTC)</h1>
 	Number of complete IDs: {{ idnum }}; Number of complete LDTs: {{ ldtnum }} <br />
-	<button id="idbtn" onclick="window.open(encodeURI(idtrials));">Download ID Data</button>
-	<button id="ldtbtn" onclick="window.open(encodeURI(ldttrials));">Download LDT Data</button>
-	<button id="questbtn" onclick="window.open(encodeURI(questions));">Download Questionnaire Data</button>
+	<a class="btn btn-primary" href="/idtrials.csv">Download ID Data</a>
+	<a class="btn btn-primary" href="/ldttrials.csv">Download LDT Data</a>
+	<a class="btn btn-primary" href="/questions.csv">Download Questionnaire Data</a>
 
 </body>
 </html>
