@@ -31,18 +31,8 @@
 
                 {% endif %}
                         <p>
-                            If you feel you
-                            have reached this page in error, please email
-                            <a href="mailto:{{contact_address}}">{{contact_address}}</a>
-                            and include the following information:
+                            If you've done part of the HIT and would like to see whether you're eligable for partial compensation, please visit <a href="/compensation?hitId={{ hitId|safe }}&assignmentId={{ assignId|safe }}&workerId={{ workerId|safe }}" target="_blank">our compensation system.</a>
                         </p>
-                        <p>
-                            Error: #{{ errornum }}<br>
-                            {% if hitId %} HITID: #{{ hitId }}<br> {% endif %}
-                            {% if assignId %}AssignmentId: #{{ assignId }}<br> {% endif %}
-                            {% if workerId %} WorkerId: #{{ workerId }}<br> {% endif %}
-                        </p>
-
                 </div>
 
                 <hr>
