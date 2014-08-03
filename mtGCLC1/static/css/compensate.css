@@ -1,15 +1,40 @@
 header {
 	text-align: center;
+	border-bottom: solid #ccc 1px;
+	margin: 20px 0;
 }
 
-header .logo{
+header .logo {
 	height: 128px;
 }
 
-header h1{
+header h1 {
 	margin-top: 0;
 }
 
-footer p{
+main#entry input#workerId{
+	max-width: 15em;
+}
+
+main#entry {
 	text-align: center;
+}
+
+main .alert {
+	background: none;
+}
+
+main h4 {
+	text-align: center;
+}
+
+footer {
+	border-top: solid 1px #ccc;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+footer p {
+	text-align: center;
+	margin-bottom: 20px;
 }
