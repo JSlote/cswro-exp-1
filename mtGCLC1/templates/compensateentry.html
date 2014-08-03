@@ -12,12 +12,18 @@
 	  <h1>CPL Compensation System</h1>
 <header>
 <main>
-<div class="alert alert-{{ message.type }}">
-	  <h4>{{ message.title|safe }}</h4>
+<p>Welcome to Carleton Perception Lab's compensation system! Please enter your Worker ID below and click continue.
+	  <h4>Please enter your worker id:</h4>
 	  	 {{ message.content|safe }}</div>
+	  	 <form action="compensate">
+		  <input type="text" name="workerId" required autofocus>
+		  <input type="submit" value="Go!">
+		</form>
+
+		If you don't know your Worker ID, you can find it at your <a href="https://www.mturk.com/mturk/dashboard" target="_blank">Worker Dashboard</a>.
+
 </main>
 <footer>
-	<p><a class="btn btn-primary btn-lg" role="button" onclick="window.location=window.location">Refresh</a></p>
 	  <div class="alert alert-warning">
 	  <h4>Don't close this window!</h4>
 	  If you absolutely have to, save the url somewhere safe.</div>
