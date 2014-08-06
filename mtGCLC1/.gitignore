@@ -1,7 +1,0 @@
-config.txt
-.psiturk_history
-*.sublime-project
-*.sublime-workspace
-*.pyc
-server.log
-participants.db
