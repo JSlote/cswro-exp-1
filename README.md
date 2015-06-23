@@ -6,6 +6,6 @@ This is the code repository for Experiment One of the [above-titled study](https
 
 You are welcome to use this code for personal or academic uses. If you use all or portions of this project in an academic paper, please cite as follows:
 
-> Slote, J.A. and Strand, J.F. (2015). CSWRO-Exp-1 [Software]. Northfield, MN: Carleton College. Available from https://github.com/JSlote/cswro-exp-1
+> Slote, J.A. and Strand, J.F. (2015). *CSWRO-Exp-1* [Software]. Northfield, MN: Carleton College. Available from https://github.com/JSlote/cswro-exp-1
 
 For more information about this study or the Carleton Perception Lab, please visit https://apps.carleton.edu/curricular/psyc/jstrand/research/resources/
