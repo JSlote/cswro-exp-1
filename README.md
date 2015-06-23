@@ -2,7 +2,7 @@
 ######Joseph Slote and Julia F. Strand
 ## Experiment 1
 
-This is the code repository for Experiment One of the [above-titled study](http://link.springer.com/article/10.3758%2Fs13428-015-0599-7). The experiment is designed to be run using [psiTurk](https://psiturk.org/) version 2.1.1 on the Amazon Mechanical Turk platform.
+This is the code repository for Experiment One of the [above-titled study](https://apps.carleton.edu/curricular/psyc/jstrand/assets/Slote_and_Strand_BRM.pdf). The experiment is designed to be run using [psiTurk](https://psiturk.org/) version 2.1.1 on the Amazon Mechanical Turk platform.
 
 You are welcome to use this code for personal or academic uses. If you use all or portions of this project in an academic paper, please cite as follows:
 
