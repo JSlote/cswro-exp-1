@@ -1,3 +1,11 @@
-# README #
+# Conducting spoken word recognition research online: Validation and a new timing method
+######Joseph Slote and Julia F. Strand
+## Experiment 1
 
-This is the parent repository for Carleton Perception Lab's psiturk instance on psiturk-perception.rhcloud.com that hosts experiments for the Amazon Mechanical Turk platform. Pull from here into the app-root/repo directory to update the live instace.
+This is the code repository for Experiment One of the [above-titled study](http://link.springer.com/article/10.3758%2Fs13428-015-0599-7). The experiment is designed to be run using [psiTurk](https://psiturk.org/) version 2.1.1 on the Amazon Mechanical Turk platform.
+
+You are welcome to use this code for personal or academic uses. If you use all or portions of this project in an academic paper, please cite as follows:
+
+> Slote, J.A. and Strand, J.F. (2015). CSWRO-Exp-1 [Software]. Northfield, MN: Carleton College. Available from https://github.com/JSlote/cswro-exp-1
+
+For more information about this study or the Carleton Perception Lab, please visit https://apps.carleton.edu/curricular/psyc/jstrand/research/resources/
