@@ -13,6 +13,6 @@ Of general interest are the following features:
 
 You are welcome to use this code for personal or academic uses. If you use all or portions of this project in an academic paper, please cite as follows:
 
-> Slote, J.A. and Strand, J.F. (2015). *CSWRO-Exp-1* [Software]. Northfield, MN: Carleton College. Available from https://github.com/JSlote/cswro-exp-1
+> Slote, J., & Strand, J. (2015). Conducting spoken word recognition research online: Validation and a new timing method. *Behavior Research Methods*. doi: 10.3758/s13428-015-0599-7.
 
 For more information about this study or the Carleton Perception Lab, please visit https://apps.carleton.edu/curricular/psyc/jstrand/research/resources/
