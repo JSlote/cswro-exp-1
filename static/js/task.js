@@ -454,27 +454,27 @@ $(window).load( function(){
 
 	if (expCondition === 0) { //ID
 		$(document)
-		.queue(function(next){  captcha(											next);})
-		.queue(function(next){  fullscreen.begin(									next);})
+		.queue(function(next){  captcha(						next);})
+		.queue(function(next){  fullscreen.begin(					next);})
 		.queue(function(next){  reqLoaded([idLoaders.practice,idLoaders.babble],	next);})
 		.queue(function(next){  instruct(["instructions/idInstructions.html"],		next);})
-		.queue(function(next){  idTrials(idPracticeStims,true,						next);})
-		.queue(function(next){  reqLoaded([idLoaders.words],						next);})
-		.queue(function(next){  instruct(["instructions/idPretrial.html"],			next);})
-		.queue(function(next){  idTrials(wordStims,true,							next);})
-		.queue(function(next){	fullscreen.end(										next);})
-		.queue(function()    {  questionnaire()										 	 ;});
+		.queue(function(next){  idTrials(idPracticeStims,true,				next);})
+		.queue(function(next){  reqLoaded([idLoaders.words],				next);})
+		.queue(function(next){  instruct(["instructions/idPretrial.html"],		next);})
+		.queue(function(next){  idTrials(wordStims,true,				next);})
+		.queue(function(next){	fullscreen.end(						next);})
+		.queue(function()    {  questionnaire()						     ;});
 	} else { //LDT
 		$(document)
-		.queue(function(next){  captcha(												next);})
-		.queue(function(next){  fullscreen.begin(										next);})
-		.queue(function(next){  reqLoaded([ldtLoaders.practice],						next);})
-		.queue(function(next){  instruct(["instructions/ldtInstructions.html"],			next);})
-		.queue(function(next){  ldtTrials(ldtPracticeStims,true,						next);})
-		.queue(function(next){  reqLoaded([ldtLoaders.words, ldtLoaders.nonword],		next);})
-		.queue(function(next){  instruct(["instructions/ldtPretrial.html"],				next);})
-		.queue(function(next){  ldtTrials(_.extend(wordStims,nonWordStims),true,		next);})
-		.queue(function(next){	fullscreen.end(											next);})
-		.queue(function()    {  questionnaire()										 		 ;});
+		.queue(function(next){  captcha(						next);})
+		.queue(function(next){  fullscreen.begin(					next);})
+		.queue(function(next){  reqLoaded([ldtLoaders.practice],			next);})
+		.queue(function(next){  instruct(["instructions/ldtInstructions.html"],		next);})
+		.queue(function(next){  ldtTrials(ldtPracticeStims,true,			next);})
+		.queue(function(next){  reqLoaded([ldtLoaders.words, ldtLoaders.nonword],	next);})
+		.queue(function(next){  instruct(["instructions/ldtPretrial.html"],		next);})
+		.queue(function(next){  ldtTrials(_.extend(wordStims,nonWordStims),true,	next);})
+		.queue(function(next){	fullscreen.end(						next);})
+		.queue(function()    {  questionnaire()						     ;});
 	}
 });
