@@ -1,3 +1,27 @@
+## Experiment 1
+
+This is the code repository for Experiment One of the [below-titled study](https://apps.carleton.edu/curricular/psyc/jstrand/assets/Slote_and_Strand_BRM.pdf). The experiment is designed to be run using [psiTurk](https://psiturk.org/) version 2.1.1 on the Amazon Mechanical Turk platform.
+
+After calibration and instructions, the experiment consists of two separate tasks (each participant completes only one):
+
+1. Auditory Lexical Decision Task on consonant–vowel–consonant (CVC) words and phonotactilly legal nonwords (400 each)
+2. Identification Task on 400 CVC words
+
+Of general interest are the following features:
+- Cursor auto-hiding during experiment proper,
+- Audio preloading including a progress bar pop-up,
+- Fullscreen requirement to mitigate distraction (participants are asked to enter fullscreen and the experiment is paused (all input blocked) if they exit prematurely),
+- Basic asynchronous flow control for transitioning between stages of the experiment,
+- and Audio reCaptcha integration (you will have to input your reCaptcha keys in custom.py and task.js for this feature to function).
+
+You are welcome to use this code for personal or academic uses. If you use all or portions of this project in an academic paper, please cite as follows:
+
+> Slote, J., & Strand, J. (2015). Conducting spoken word recognition research online: Validation and a new timing method. *Behavior Research Methods*. doi: 10.3758/s13428-015-0599-7.
+
+For more information about this study or the Carleton Perception Lab, please visit https://apps.carleton.edu/curricular/psyc/jstrand/research/resources/
+
+Here is the title & abstract of the relevant paper:
+
 # Conducting spoken word recognition research online: Validation and a new timing method
 ######Joseph Slote and Julia F. Strand
 
@@ -32,26 +56,3 @@ research. Taken together, these findings suggest that AMT can
 be a viable alternative to the traditional laboratory setting as a
 source of participation for some spoken word recognition
 research.
-
-
-## Experiment 1
-
-This is the code repository for Experiment One of the [above-titled study](https://apps.carleton.edu/curricular/psyc/jstrand/assets/Slote_and_Strand_BRM.pdf). The experiment is designed to be run using [psiTurk](https://psiturk.org/) version 2.1.1 on the Amazon Mechanical Turk platform.
-
-After calibration and instructions, the experiment consists of two separate tasks (each participant completes only one):
-
-1. Auditory Lexical Decision Task on consonant–vowel–consonant (CVC) words and phonotactilly legal nonwords (400 each)
-2. Identification Task on 400 CVC words
-
-Of general interest are the following features:
-- Cursor auto-hiding during experiment proper,
-- Audio preloading including a progress bar pop-up,
-- Fullscreen requirement to mitigate distraction (participants are asked to enter fullscreen and the experiment is paused (all input blocked) if they exit prematurely),
-- Basic asynchronous flow control for transitioning between stages of the experiment,
-- and Audio reCaptcha integration (you will have to input your reCaptcha keys in custom.py and task.js for this feature to function).
-
-You are welcome to use this code for personal or academic uses. If you use all or portions of this project in an academic paper, please cite as follows:
-
-> Slote, J., & Strand, J. (2015). Conducting spoken word recognition research online: Validation and a new timing method. *Behavior Research Methods*. doi: 10.3758/s13428-015-0599-7.
-
-For more information about this study or the Carleton Perception Lab, please visit https://apps.carleton.edu/curricular/psyc/jstrand/research/resources/
