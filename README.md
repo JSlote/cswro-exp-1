@@ -18,12 +18,16 @@ You are welcome to use this code for personal or academic uses. If you use all o
 
 > Slote, J., & Strand, J. (2015). Conducting spoken word recognition research online: Validation and a new timing method. *Behavior Research Methods*. doi: 10.3758/s13428-015-0599-7.
 
+You can find a copy of the paper here:
+
+https://apps.carleton.edu/curricular/psyc/jstrand/assets/Slote_and_Strand_BRM.pdf
+
 For more information about this study or the Carleton Perception Lab, please visit https://apps.carleton.edu/curricular/psyc/jstrand/research/resources/
 
-Here is the title & abstract of the relevant paper:
+Here's the abstract:
 
 # Conducting spoken word recognition research online: Validation and a new timing method
-######Joseph Slote and Julia F. Strand
+_Joseph Slote and Julia F. Strand_
 
 **Abstract:** Models of spoken word recognition typically make
 predictions that are then tested in the laboratory against the
